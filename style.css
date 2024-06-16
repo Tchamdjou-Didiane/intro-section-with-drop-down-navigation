@@ -28,6 +28,7 @@ body {
 	text-decoration: none;
 	font-weight: 600;
 	color: black;
+	
 }
 
 .navbar a{
@@ -39,10 +40,6 @@ body {
 	transition: .3s;
 }
 
-.navbar a:hover{
-	color: yellowgreen;
-
-}
 
 .home{
 	height:100vh ;
@@ -123,3 +120,59 @@ body {
 .image img{
 	justify-content: space-between;
 }
+
+.menu {
+    height: 60px;
+    list-style: none;
+    padding: 10px;
+    margin: 40px;
+	
+}
+
+.menu li {
+    float: left;
+    width: 200px;
+	
+}
+
+.menu li a:link, .menu li a:visited {
+    display: block;
+    color: #000;
+    
+    padding: 6px 10px;
+    border-right: 1px solid #FFF;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu .sousmenu {
+    list-style-type: none;
+    display: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+.menu .sousmenu li {
+    float: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+.menu .sousmenu li a:link, .menu li a:visited {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    background-color: #FFF;
+}
+
+
+
+.menu li:hover .sousmenu {
+    display: block;
+}
+
+
+
